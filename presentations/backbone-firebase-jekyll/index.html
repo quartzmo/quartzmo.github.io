@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Presentation: Interactive static sites with Jekyll, Backbone.js, and Firebase</title>
+		<title>Interactive static sites with Jekyll, Backbone.js, and Firebase - quartzmo.com</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -47,22 +47,36 @@
 
                 <section data-markdown>
             					<script type="text/template">
+                                   ### Who am I?
+
+                                   * Regular, working-stiff web developer
+                                   * Full-stack Rails and JavaScript
+                                   * Author of an interactive, online book about [Backbone.js + CoffeeScript](http://www.scriptybooks.com/books/backbone-coffeescript)
+            					</script>
+            				</section>
+
+                <section data-markdown>
+            					<script type="text/template">
                                    ### Why am I interested in this stuff?
 
-                                   * Start marketing the day you get your brilliant idea
-                                   * [Email landing page](https://github.com/quartzmo/email-landing-page) - "minimalist" solution using Heroku, Sinatra, and Mailchimp
-                                   * [backbonecoffeescript.com](http://backbonecoffeescript.com), with tweets about the product in Storify
+                                   * Marketing sites - Make one the day you get your idea
+                                   * [Email landing page](https://github.com/quartzmo/email-landing-page) - My previous "minimalist" solution (Heroku, Sinatra, and Mailchimp)
+                                   * [backbonecoffeescript.com](http://backbonecoffeescript.com) - Landing page with some dynamic content via [Storify](https://storify.com/)
+                                   * Interactive books - My platform: [scriptybooks.com](http://www.scriptybooks.com)
             					</script>
             				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-                        The term "interactive static site" appears to be an oxymoron. In fact, they are all over the Web and have been for years.
+                        ### "Interactive static site"?
+                        This appears to be an oxymoron.
+
+                        They are all over the Web and have been for years.
 
                         What's relatively new:
 
                         * Site generation tools
-                        * JavaScript MVC frameworks
+                        * "Lightweight" JavaScript MVC frameworks
                         * Backend as a Service (BaaS)
 					</script>
 				</section>
@@ -71,11 +85,10 @@
                     <script type="text/template">
                         ### Why static sites?
 
-                        * Extremely stable, secure, and performant
-
+                        * Extremely stable, secure, economical, and fast
                         * Great for SEO and analytics
-
                         * Work best when the *primary* content is infrequently changed and document-oriented
+                        * Case study: A new [Jekyll-powered healthcare.gov](http://developmentseed.org/blog/new-healthcare-gov-is-open-and-cms-free/)
 
                     </script>
                 </section>
@@ -84,9 +97,9 @@
                     <script type="text/template">
                         ### Static site generation tools
 
-                        * [Jekyll](https://github.com/mojombo/jekyll) - Ruby, Rake, and Git.
-                        * [Middleman](https://github.com/middleman/middleman) - Almost a command-line version of Rails
-                        * [Journo](https://github.com/jashkenas/journo) - Good for learning: a single-file, Node-based tool that deploys via rsync
+                        * [Jekyll](https://github.com/mojombo/jekyll) - Ruby, Rake, and Git
+                        * [Middleman](https://github.com/middleman/middleman) - Feels like a command-line version of Rails
+                        * [Journo](https://github.com/jashkenas/journo) - Good for learning this stuff: a beautifully-commented, single-file, Node-based tool that deploys via rsync
 
                     </script>
                 </section>
@@ -118,7 +131,7 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### Pros
+                        ### Pros - Third-party service
 
                         * Easy to integrate
                         * Mature, complete, and ready
@@ -127,9 +140,10 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### Cons
+                        ### Cons - Third-party service
 
-                        * Third-party branding
+                        * Third-party branding *on your product page*
+                        * Each service is a silo
                         * Difficult or impossible to customize
                         * Vendor lock-in
                         * [Ugly ads](http://ruby.learncodethehardway.org/book/ex2.html) or monthly fees
@@ -140,17 +154,25 @@
                     <script type="text/template">
                         ### Open-source widgets and Backend as a Service (BaaS)
 
-                        With taglines like "Build apps fast without managing servers," services like [Firebase](https://www.firebase.com),
-                        [Parse](https://www.parse.com) (acquired by Facebook on April 25, 2013), [Kinvey](http://www.kinvey.com), [Kii](http://www.kii.com), and [StackMob](https://developer.stackmob.com).
+                        Taglines like: "Build apps fast without managing servers"
+
+                        * [Firebase](https://www.firebase.com)
+                        * [Parse](https://www.parse.com) (acquired by Facebook on April 25, 2013)
+                        * [Kinvey](http://www.kinvey.com)
+                        * [Kii](http://www.kii.com)
+                        * [StackMob](https://developer.stackmob.com)
 
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### Pros
+                        ### Pros - Commercial BaaS
 
                         * Generalized, flexible
+                        * Free tier is plenty for small stuff
+                        * Allow integration across your widgets
+                        * OAuth or custom auth
                         * Fine-grained control over your data
 
                     </script>
@@ -158,12 +180,19 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### Cons
+                        ### Cons - Commercial BaaS
 
                         * Not portable to alternative hosting
                         * Obfuscated/closed source makes it hard to debug
-                        * When will Facebook acquire Firebase?
+                        * Except Firebase, most are primarily for native mobile apps
+                        * VC-backing: acquisition or death?
 
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### The Dream: 100% open-source BaaS
                     </script>
                 </section>
 
@@ -214,9 +243,11 @@
 				<section>
 					<h1>Thank you!</h1>
 					<h3>Chris Smith</h3>
-                    <p>Twitter: @quartzmo</p>
-                    <p>GitHub: quartzmo</p>
-                    <p>www.scriptybooks.com</p>
+                    <p>Twitter: <a href="https://twitter.com/quartzmo">@quartzmo</a></small></p>
+                    <p>GitHub: <a href="https://github.com/quartzmo">quartzmo</a></small></p>
+                    <p><a href="http://www.scriptybooks.com">www.scriptybooks.com</a></small></p>
+                    <p><a href="http://www.scriptybooks.com">blog.scriptybooks.com</a></small></p>
+                    <p><a href="http://www.coffeescriptlove.com">www.coffeescriptlove.com</a></small></p>
 				</section>
 
 			</div>
