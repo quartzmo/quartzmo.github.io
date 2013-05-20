@@ -41,8 +41,11 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="/">Welcome</a>
+				<a class="brand" href="/">Quartzmo</a>
 				<ul class="nav">
+          <li class="<%= 'active'  if @document.url is "/presentations" %>">
+    							<a href="/presentations">Presentations</a>
+    			</li>
 					<% for document in @getCollection('pages').toJSON(): %>
 						<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
 							<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
