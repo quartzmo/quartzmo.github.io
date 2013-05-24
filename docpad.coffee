@@ -41,6 +41,7 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"/styles/twitter-bootstrap.css"
+				"/vendor/font-awesome/css/font-awesome.min.css"
 				"/styles/style.css"
 			]
 
