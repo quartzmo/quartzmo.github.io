@@ -5,7 +5,8 @@ layout: default
 <div class="row profile-page">
 
   <div class="span2">
-    <div id="profile-picture"></div>
+    <div id="avatar"></div>
+    <img id="avatar-print" src="/images/quartzmo-fleck-300.jpg">
   </div>
   <div class="span8">
     <section>
@@ -14,41 +15,44 @@ layout: default
 
         <div id="summary">
           <p>
-            Web developer. Writing interactive books about CoffeeScript and JavaScript.
+            Web developer. Deep experience with Ruby on Rails. Writing interactive books about CoffeeScript and JavaScript.
+          </p>
+          <p>
+            Living in Salt Lake City, Utah, USA
           </p>
         </div>
 
       </div>
 
       <div id="contact">
-        <a class="contact-item" href="mailto:quartzmo@scriptybooks.com"><i class="icon-envelope icon-2x"></i></a>
-        <a class="contact-item" href="https://twitter.com/<%= @document.username %>" target="_blank"><i class="icon-twitter icon-2x"></i></a>
-        <a class="contact-item" href="https://github.com/<%= @document.username %>" target="_blank"><i class="icon-github icon-2x"></i></a>
-        <a class="contact-item" href="http://linkedin.com/in/<%= @document.username %>" target="_blank"><i
+        <a href="mailto:quartzmo@scriptybooks.com"><i class="icon-envelope icon-2x"></i></a>
+        <a href="https://twitter.com/<%= @document.username %>" target="_blank"><i class="icon-twitter icon-2x"></i></a>
+        <a href="https://github.com/<%= @document.username %>" target="_blank"><i class="icon-github icon-2x"></i></a>
+        <a href="http://linkedin.com/in/<%= @document.username %>" target="_blank"><i
             class="icon-linkedin-sign icon-2x"></i></a>
       </div>
     </section>
 
     <section>
-      <h4>Skills</h4>
+      <h2>Skills</h2>
       <ul class="skills">
-        <li class="skill"><img src="http://g.etfv.co/http://rubygems.org/"> Ruby</li>
-        <li class="skill"><img src="http://g.etfv.co/http://weblog.rubyonrails.org//"> Rails</li>
-        <li class="skill"><img src="http://g.etfv.co/http://www.coffeescript.org"> CoffeeScript</li>
-        <li class="skill">Javascript</li>
-        <li class="skill"><img src="http://g.etfv.co/http://nodejs.org/"> Node.js</li>
-        <li class="skill"><img src="http://g.etfv.co/http://java.com"> Java</li>
-        <li class="skill"><img src="http://g.etfv.co/http://www.heroku.com/"> Heroku</li>
-        <li class="skill"><img src="http://g.etfv.co/http://aws.amazon.com/"> AWS</li>
-        <li class="skill"><img src="http://g.etfv.co/http://www.postgresql.org/"> PostgreSQL</li>
-        <li class="skill"><img src="http://g.etfv.co/http://www.mongodb.org/"> MongoDB</li>
-        <li class="skill"><img src="http://g.etfv.co/http://jquery.com/"> jQuery</li>
-        <li class="skill"><img src="http://g.etfv.co/http://backbonejs.org/"> Backbone.js</li>
-        <li class="skill"><img src="http://g.etfv.co/http://twitter.github.io/bootstrap/"> Bootstrap</li>
-        <li class="skill">Mobile Web</li>
-        <li class="skill"><img src="http://g.etfv.co/http://html5rocks.com/"> HTML5</li>
-        <li class="skill"><img src="http://g.etfv.co/http://www.css3.info/"> CSS3</li>
-        <li class="skill"><img src="http://g.etfv.co/https://developers.google.com/maps/"> Google Maps</li>
+        <li><img src="http://g.etfv.co/http://rubygems.org/"> Ruby</li>
+        <li><img src="http://g.etfv.co/http://weblog.rubyonrails.org//"> Rails</li>
+        <li><img src="http://g.etfv.co/http://www.coffeescript.org"> CoffeeScript</li>
+        <li>Javascript</li>
+        <li><img src="http://g.etfv.co/http://nodejs.org/"> Node.js</li>
+        <li><img src="http://g.etfv.co/http://java.com"> Java</li>
+        <li><img src="http://g.etfv.co/http://www.heroku.com/"> Heroku</li>
+        <li><img src="http://g.etfv.co/http://aws.amazon.com/"> AWS</li>
+        <li><img src="http://g.etfv.co/http://www.postgresql.org/"> PostgreSQL</li>
+        <li><img src="http://g.etfv.co/http://www.mongodb.org/"> MongoDB</li>
+        <li><img src="http://g.etfv.co/http://jquery.com/"> jQuery</li>
+        <li><img src="http://g.etfv.co/http://backbonejs.org/"> Backbone.js</li>
+        <li><img src="http://g.etfv.co/http://twitter.github.io/bootstrap/"> Bootstrap</li>
+        <li>Mobile Web</li>
+        <li><img src="http://g.etfv.co/http://html5rocks.com/"> HTML5</li>
+        <li><img src="http://g.etfv.co/http://www.css3.info/"> CSS3</li>
+        <li><img src="http://g.etfv.co/https://developers.google.com/maps/"> Google Maps</li>
       </ul>
     </section>
     <div class="profile-content">

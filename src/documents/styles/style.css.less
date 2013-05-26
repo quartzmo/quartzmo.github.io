@@ -13,17 +13,18 @@ body {
 }
 
 .profile-content {
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 .profile-content h1 {
   margin-top: 40px;
-  margin-left: -25px;
+  margin-left: -22px;
 }
 
 .profile-content h2 {
-  margin-top: 20px;
-  margin-left: -25px;
+  margin-top: 21px;
+  margin-left: -22px;
+  margin-bottom: 0;
 }
 
 .profile-page {
@@ -38,9 +39,15 @@ body {
     text-decoration: none;
 }
 
+#avatar-print {
+  display: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 120px;
+  width: 120px;
+}
 
-
-#profile-picture {
+#avatar {
     display: inline-block;
     min-width: 120px;
     max-width: 120px;
@@ -50,6 +57,10 @@ body {
     margin-top: 20px;
     background-image: url(/images/quartzmo-fleck-300.jpg);
     background-size: 120px 120px;
+}
+
+#contact {
+  margin-top: 18px;
 }
 
 div.post-date {
@@ -75,7 +86,10 @@ h3 em {
 
 
 h1 { font-size: 26px; } // ~24px
-h2 { font-size: 17px; } // ~18px
+h2 {
+  font-size: 18px;
+}
+
 h3 {
   font-size: 15px;
   line-height:21px;
@@ -83,27 +97,27 @@ h3 {
 }
 h4 { font-size: 14px; }
 
-
-
 .skills {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 }
 
-.skill {
-    display: inline-block;
-    background: rgba(230, 224, 224, 0.63);
-    padding: 2px 9px;
-    border-radius: 12px;
-    margin-top: 8px;
+.skills li {
+  display: inline-block;
+  background: inherit;
+  padding: 2px 10px;
+  border-radius: 3px;
+  margin-top: 8px;
+  line-height: 20px;
+  border: 1px solid #ABCDEF;
 }
 
-.skill img {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: 16px 16px;
-    vertical-align: text-bottom;
+.skills li img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  vertical-align: text-bottom;
 }
 
 /* Sticky footer styles
@@ -154,4 +168,68 @@ footer {
    body {
      padding-top: 0px;
    }
+}
+
+
+
+@media print {
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: inherit;
+    color: green;
+  }
+  a[href]:after {
+    content:  "";
+  }
+  abbr[title]:after {
+    content: "";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .navbar, footer, #avatar {
+    display: none;
+  }
+
+  #avatar-print {
+    display: inline-block;
+  }
+
 }
