@@ -1,47 +1,80 @@
 ---
-layout: default
+    layout: default
 ---
 
-<div class="row profile-page">
+<div class="profile-content">
+  <div class="row">
 
-  <div class="span2">
-    <div id="avatar"></div>
-    <img id="avatar-print" src="/images/quartzmo-fleck-300.jpg">
+    <div class="span2">
+      <div id="avatar"></div>
+      <img id="avatar-print" src="/images/quartzmo-fleck-300.jpg"/>
+    </div>
+    <div class="span8">
+      <h1>Chris Smith</h1>
+
+      <div id="summary">
+        <p>
+          Web developer. Deep experience with Ruby on Rails and mobile.<br/>
+          Creating interactive books about CoffeeScript and JavaScript MVC.
+        </p>
+
+        <p>
+          Living in Salt Lake City, Utah, USA.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="span8">
-    <section>
-      <div id="about">
-        <h1>Chris Smith</h1>
 
-        <div id="summary">
-          <p>
-            Web developer. Deep experience with Ruby on Rails. Writing interactive books about CoffeeScript and JavaScript.
-          </p>
-          <p>
-            Living in Salt Lake City, Utah, USA
-          </p>
-        </div>
 
-      </div>
+  <div id="contact" class="row">
+    <div class="span2">
+      <h2>Contact</h2>
+    </div>
+    <div class="span8">
+      <ul class="contact-links">
 
-      <div id="contact">
-        <a href="mailto:quartzmo@scriptybooks.com"><i class="icon-envelope icon-2x"></i></a>
-        <a href="https://twitter.com/<%= @document.username %>" target="_blank"><i class="icon-twitter icon-2x"></i></a>
-        <a href="https://github.com/<%= @document.username %>" target="_blank"><i class="icon-github icon-2x"></i></a>
-        <a href="http://linkedin.com/in/<%= @document.username %>" target="_blank"><i
-            class="icon-linkedin-sign icon-2x"></i></a>
-      </div>
-    </section>
+        <li>
+          <a href="mailto:quartzmo@scriptybooks.com">
+            <i class="icon-envelope icon-2x"></i>
+          </a>
+          <span class="print-only">quartzmo@scriptybooks.com</span>
+        </li>
+        <li>
+          <a href="https://twitter.com/<%= @document.username %>">
+            <i class="icon-twitter icon-2x"></i>
+          </a>
+          <span class="print-only">twitter.com/<%= @document.username %></span>
+        </li>
+        <li>
+          <a href="https://github.com/<%= @document.username %>">
+            <i class="icon-github icon-2x"></i>
+          </a>
+          <span class="print-only">github.com/<%= @document.username %></span>
+        </li>
+        <li>
+          <a href="http://linkedin.com/in/<%= @document.username %>">
+            <i class="icon-linkedin-sign icon-2x"></i>
+          </a>
+          <span class="print-only">linkedin.com/in/<%= @document.username %></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <section>
+
+  <div class="row">
+    <div class="span2">
       <h2>Skills</h2>
+    </div>
+    <div class="span8">
       <ul class="skills">
         <li><img src="http://g.etfv.co/http://rubygems.org/"> Ruby</li>
         <li><img src="http://g.etfv.co/http://weblog.rubyonrails.org//"> Rails</li>
         <li><img src="http://g.etfv.co/http://www.coffeescript.org"> CoffeeScript</li>
-        <li>Javascript</li>
+        <li><img src="http://g.etfv.co/http://jsconf.com/"> JavaScript</li>
         <li><img src="http://g.etfv.co/http://nodejs.org/"> Node.js</li>
         <li><img src="http://g.etfv.co/http://java.com"> Java</li>
+        <li><img src="http://g.etfv.co/http://www.apple.com/ios/"> iOS</li>
         <li><img src="http://g.etfv.co/http://www.heroku.com/"> Heroku</li>
         <li><img src="http://g.etfv.co/http://aws.amazon.com/"> AWS</li>
         <li><img src="http://g.etfv.co/http://www.postgresql.org/"> PostgreSQL</li>
@@ -49,17 +82,63 @@ layout: default
         <li><img src="http://g.etfv.co/http://jquery.com/"> jQuery</li>
         <li><img src="http://g.etfv.co/http://backbonejs.org/"> Backbone.js</li>
         <li><img src="http://g.etfv.co/http://twitter.github.io/bootstrap/"> Bootstrap</li>
-        <li>Mobile Web</li>
-        <li><img src="http://g.etfv.co/http://html5rocks.com/"> HTML5</li>
-        <li><img src="http://g.etfv.co/http://www.css3.info/"> CSS3</li>
+        <li><img src="http://g.etfv.co/http://www.w3.org/html/logo/"> HTML5</li>
+        <li><img src="http://g.etfv.co/http://www.w3.org/"> CSS3</li>
         <li><img src="http://g.etfv.co/https://developers.google.com/maps/"> Google Maps</li>
       </ul>
-    </section>
-    <div class="profile-content">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="span2">
+      <h2>Projects</h2>
+    </div>
+    <div class="span8">
+      <h3><a href="http://www.scriptybooks.com">ScriptyBooks</a></h3>
+      <p>Design, development, and marketing of an interactive, Web-based learning platform.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span2">
+      <h2>Publications</h2>
+    </div>
+    <div class="span8">
+      <h3><a href="http://www.scriptybooks.com/books/backbone-coffeescript">Backbone + CoffeeScript | scriptybooks.com</a></h3>
+      <p>
+        A full-length book on Backbone.js and CoffeeScript with an interactive environment that one reader called
+        a potential <a href="http://www.scriptybooks.com/about">"game changer in the world of programming literature."</a>
+      </p>
+      <h3><a href="http://www.coffeescriptlove.com">coffeescriptlove.com</a></h3>
+      <p>CoffeeScript's first fan blog, with over 100,000 visits. <a href="http://css.dzone.com/users/quartzmo">DZone Most Valuable Blogger.</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span2">
+      <h2>Experience</h2>
+    </div>
+    <div class="span8">
+
+
       <%- @content %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span2">
+      <h2>Education</h2>
+    </div>
+    <div class="span8">
+
+
+
+      <h3>Master of Journalism | U.C. Berkeley</h3>
+
+      <h3>B.A., English and Spanish Literatures | Stanford University</h3>
     </div>
 
 
   </div>
-  <!-- span8 -->
-</div> <!-- row -->
+</div>

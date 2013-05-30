@@ -20,7 +20,7 @@ docpadConfig = {
 			oldUrls: []
 
 			# The default title of our website
-			title: "Chris Smith (Quartzmo)"
+			title: "Quartzmo"
 
 			# The website description (for SEO)
 			description: """

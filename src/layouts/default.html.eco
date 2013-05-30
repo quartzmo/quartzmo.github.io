@@ -39,13 +39,16 @@
 <body>
 <div id="wrap">
 	<!-- Markup -->
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container container-narrow">
 				<a class="brand" href="/">Quartzmo</a>
 				<ul class="nav">
-          <li class="<%= 'active'  if @document.url is "/presentations" %>">
+          <li>
     							<a href="/presentations">Presentations</a>
+    			</li>
+          <li>
+    							<a href="http://www.scriptybooks.com/">ScriptyBooks</a>
     			</li>
 					<% for document in @getCollection('pages').toJSON(): %>
 						<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
@@ -67,7 +70,6 @@
 
 <div class="container container-narrow">
 	<footer>
-		<p>&copy; Chris Smith <%- (new Date()).getFullYear() %></p>
 	</footer>
 </div><!-- /container -->
 
